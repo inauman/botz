@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=42", "wheel>=0.34.2"]
+
+[project]
+name = "emma-confluence-bot"
+version = "0.1.0"
+description = "A bot for Confluence integration with Slack"
+license = {text = "Bullish Inc."}
+authors = [
+    {name = "MN", email = "mohammad.nauman@bullish.com"},
+]
+
+dependencies = [
+    "Flask",
+    "fastapi",
+    "uvicorn",
+    "slack-sdk",
+    "python-dotenv"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+run-botz-emma = "app.main:run"

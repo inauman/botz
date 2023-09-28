@@ -1,0 +1,5 @@
+Flask
+fastapi
+uvicorn
+slack-sdk
+python-dotenv

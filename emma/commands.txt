@@ -1,0 +1,12 @@
+ngrok http 5000 --log=stdout
+
+uvicorn app.app:app --port 5000
+clear && uvicorn app.app:app --port 5000 --log-level debug
+
+
+python -m build
+
+SLACK_BOT_TOKEN = "xoxb-"
+SLACK_SIGNING_SECRET = ""
+SLACK_BOT_USER_ID = ""
+OPENAI_API_KEY= ""
