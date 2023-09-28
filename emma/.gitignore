@@ -96,3 +96,33 @@ target/
 
 # Ignore all .env files
 .env*
+
+# macOS Finder metadata
+.DS_Store
+
+# macOS folder attributes
+.AppleDouble
+.LSOverride
+
+# macOS file attributes
+._*
+
+# macOS resource forks
+.__*
+
+# macOS trash folder
+.Trashes
+
+# macOS temporary files
+*.swp
+*.swo
+*.swm
+*.lock
+*.DS_Store?
+*.AppleDouble
+*.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+__MACOSX/
